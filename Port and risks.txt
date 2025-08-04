@@ -1,0 +1,102 @@
+Port 135/tcp 
+
+What Does it do:
+Used by the DCOM/RPC service.
+
+Acts as a service lookup — like a "directory" for Windows services.
+
+Risk:
+Historically targeted by malware like Blaster Worm.
+
+Can expose sensitive Windows services remotely.
+
+Vulnerable to enumeration and buffer overflow exploits if unpatched.
+
+
+
+Port 139/tcp
+
+What Does it do:
+Part of NetBIOS over TCP/IP, used for
+
+File and printer sharing
+
+Network browsing
+
+
+Risk:
+Can be used for enumeration (e.g., viewing shared folders, usernames).
+
+Subject to SMB relay attacks, NetBIOS poisoning, and information disclosure.
+
+
+
+Port 445/tcp
+What does it Do:
+Used for SMB (Server Message Block) protocol over TCP.
+
+File and printer sharing
+
+Windows domain authentication
+
+
+Risk:
+One of the most exploited ports in Windows history:
+
+EternalBlue exploit (used in WannaCry, NotPetya ransomware)
+
+SMBGhost vulnerability
+
+
+
+
+Port 912/tcp
+What does it Do:
+Not a well-known IANA-assigned port.
+
+McAfee ePolicy Orchestrator Agent
+
+Custom applications or IoT devices
+
+Risk:
+Since this is a non-standard port, its risk depends entirely on the service using it.
+
+Could be A backdoor and a web service or API without authentication
+
+
+
+Port 7070/tcp –
+
+What does it Do:
+
+Commonly used for media streaming services:
+
+RealPlayer
+
+RTSP-over-TCP
+
+Also used by some proxy servers or Java RMI services
+
+
+Risk:
+
+May expose live streams or surveillance feeds if unsecured
+
+Could be abused for tunneling or bypassing filters
+
+
+Port 902/tcp 
+
+What does it Do:
+
+Used by VMware Workstation, vSphere, ESXi
+
+Allows remote management and VM console access
+
+Risk:
+
+Scanned for vulnerabilities
+
+Exploited for remote access if credentials are weak or leaked
+
+
