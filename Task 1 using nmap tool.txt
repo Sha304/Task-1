@@ -1,0 +1,97 @@
+Starting Nmap 7.97 ( https://nmap.org ) at 2025-08-04 21:24 +0530
+NSE: Loaded 158 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 21:24
+Completed NSE at 21:24, 0.01s elapsed
+Initiating NSE at 21:24
+Completed NSE at 21:24, 0.00s elapsed
+Initiating NSE at 21:24
+Completed NSE at 21:24, 0.00s elapsed
+Initiating Parallel DNS resolution of 1 host. at 21:24
+Completed Parallel DNS resolution of 1 host. at 21:24, 0.50s elapsed
+Initiating SYN Stealth Scan at 21:24
+Scanning 192.168.207.131 [1000 ports]
+Discovered open port 445/tcp on 192.168.207.131
+Discovered open port 139/tcp on 192.168.207.131
+Discovered open port 135/tcp on 192.168.207.131
+Discovered open port 912/tcp on 192.168.207.131
+Discovered open port 7070/tcp on 192.168.207.131
+Discovered open port 902/tcp on 192.168.207.131
+Completed SYN Stealth Scan at 21:24, 0.12s elapsed (1000 total ports)
+Initiating Service scan at 21:24
+Scanning 6 services on 192.168.207.131
+Completed Service scan at 21:24, 11.18s elapsed (6 services on 1 host)
+Initiating OS detection (try #1) against 192.168.207.131
+Retrying OS detection (try #2) against 192.168.207.131
+Retrying OS detection (try #3) against 192.168.207.131
+Retrying OS detection (try #4) against 192.168.207.131
+Retrying OS detection (try #5) against 192.168.207.131
+NSE: Script scanning 192.168.207.131.
+Initiating NSE at 21:24
+Completed NSE at 21:25, 14.21s elapsed
+Initiating NSE at 21:25
+Completed NSE at 21:25, 0.27s elapsed
+Initiating NSE at 21:25
+Completed NSE at 21:25, 0.00s elapsed
+Nmap scan report for 192.168.207.131
+Host is up (0.00077s latency).
+Not shown: 994 closed tcp ports (reset)
+PORT     STATE SERVICE         VERSION
+135/tcp  open  msrpc           Microsoft Windows RPC
+139/tcp  open  netbios-ssn     Microsoft Windows netbios-ssn
+445/tcp  open  microsoft-ds?
+902/tcp  open  ssl/vmware-auth VMware Authentication Daemon 1.10 (Uses VNC, SOAP)
+912/tcp  open  vmware-auth     VMware Authentication Daemon 1.0 (Uses VNC, SOAP)
+7070/tcp open  ssl/realserver?
+| ssl-cert: Subject: commonName=AnyDesk Client
+| Issuer: commonName=AnyDesk Client
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2024-01-18T11:50:17
+| Not valid after:  2074-01-05T11:50:17
+| MD5:     ffee 35a5 0d6c 4241 7706 cba1 ce7d 70db
+| SHA-1:   3927 1210 e79c 168d 7880 9ea3 b1fc 8fcf 4726 2cd0
+|_SHA-256: 6698 501f 6181 5fd5 9990 3960 99ae 6ab5 19a0 4609 e7ae b116 93b0 3433 aecb 1745
+|_ssl-date: TLS randomness does not represent time
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.97%E=4%D=8/4%OT=135%CT=1%CU=42280%PV=Y%DS=0%DC=L%G=Y%TM=6890D7D
+OS:F%P=i686-pc-windows-windows)SEQ(SP=103%GCD=1%ISR=107%TI=I%CI=I%II=I%SS=S
+OS:%TS=A)SEQ(SP=105%GCD=1%ISR=10D%TI=I%CI=I%II=I%SS=S%TS=A)SEQ(SP=108%GCD=1
+OS:%ISR=109%TI=I%CI=I%II=I%SS=S%TS=A)SEQ(SP=108%GCD=1%ISR=10C%TI=I%CI=I%II=
+OS:I%SS=S%TS=A)OPS(O1=MFFD7NW8ST11%O2=MFFD7NW8ST11%O3=MFFD7NW8NNT11%O4=MFFD
+OS:7NW8ST11%O5=MFFD7NW8ST11%O6=MFFD7ST11)WIN(W1=FFFF%W2=FFFF%W3=FFFF%W4=FFF
+OS:F%W5=FFFF%W6=FFFF)ECN(R=Y%DF=Y%T=80%W=FFFF%O=MFFD7NW8NNS%CC=N%Q=)T1(R=Y%
+OS:DF=Y%T=80%S=O%A=S+%F=AS%RD=0%Q=)T2(R=Y%DF=Y%T=80%W=0%S=Z%A=S%F=AR%O=%RD=
+OS:0%Q=)T3(R=Y%DF=Y%T=80%W=0%S=Z%A=O%F=AR%O=%RD=0%Q=)T4(R=Y%DF=Y%T=80%W=0%S
+OS:=A%A=O%F=R%O=%RD=0%Q=)T5(R=Y%DF=Y%T=80%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R
+OS:=Y%DF=Y%T=80%W=0%S=A%A=O%F=R%O=%RD=0%Q=)T7(R=Y%DF=Y%T=80%W=0%S=Z%A=S+%F=
+OS:AR%O=%RD=0%Q=)U1(R=Y%DF=N%T=80%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=Z%RUCK=G%
+OS:RUD=G)IE(R=Y%DFI=N%T=80%CD=Z)
+
+Uptime guess: 2.286 days (since Sat Aug  2 14:33:01 2025)
+Network Distance: 0 hops
+TCP Sequence Prediction: Difficulty=259 (Good luck!)
+IP ID Sequence Generation: Incremental
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| smb2-time: 
+|   date: 2025-08-04T15:55:01
+|_  start_date: N/A
+| smb2-security-mode: 
+|   3.1.1: 
+|_    Message signing enabled but not required
+
+NSE: Script Post-scanning.
+Initiating NSE at 21:25
+Completed NSE at 21:25, 0.00s elapsed
+Initiating NSE at 21:25
+Completed NSE at 21:25, 0.00s elapsed
+Initiating NSE at 21:25
+Completed NSE at 21:25, 0.00s elapsed
+Read data files from: F:\Elevate Labs Internship\nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 41.56 seconds
+           Raw packets sent: 1080 (51.090KB) | Rcvd: 2196 (97.764KB)
